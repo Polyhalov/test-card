@@ -85,3 +85,7 @@ margin: auto;
         text-align: left;
         text-transform: uppercase;
 }
+.label{
+    align-items: center;
+    margin-left: auto;
+}

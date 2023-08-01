@@ -7,7 +7,7 @@ const UserList = () => {
 
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     const [items, setItems] = useState([]);
     const [currentItems, setCurrentItems] = useState([]);
     
@@ -55,7 +55,7 @@ const UserList = () => {
         if (e.target.value === 'All') {
             setCurrentItems(items)
         } else if (e.target.value === 'Follow')
-            setCurrentItems(items.filter((prevItem) => prevItem.isFollow == true));
+            setCurrentItems(items.filter((prevItem) => prevItem.isFollow === true));
         else {
             setCurrentItems(items.filter((Item) => Item.isFollow !== true));
         }
@@ -79,7 +79,7 @@ const UserList = () => {
 
     return (
         <div className={css.layout}>
-            <label htmlFor="followers-select">Choose a followers:</label>
+            <label className={css.label} htmlFor="followers-select">Choose a followers:</label>
 
 <select name="pets" onChange={handleChange} id="followers-select">
    <option value="All">All</option>
@@ -89,7 +89,7 @@ const UserList = () => {
             <ul className={css.list}>
                 {elements}
             </ul>
-            {items.length<12 && <button className={css.loadButton} onClick={loadMore}>Load More</button>}
+            {items.length<12 && loading && <button className={css.loadButton} onClick={loadMore}>Load More</button>}
             
         </div>
     )
