@@ -1,0 +1,87 @@
+.layout{
+width: 1300px;
+margin: auto;
+}
+.box{
+    width: 1230px;
+    display: block;
+    padding-left: 36px;
+    padding-right: 36px;
+    width: 308px;
+    height: 460px;
+    border: 1px solid black;
+    border-radius:20px ;
+    background-image: url(../../images/picture2\ 1.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+    background-color: rgba(75, 42, 153, 1);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+.photo{
+    width: 80px;
+    border-radius: 50%;
+}
+.list {
+    text-align: center;
+    list-style: none;
+    width: 1180px;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.btn{
+    width: 196px;
+    text-transform: uppercase;
+    padding: 14px 39px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgba(55, 55, 55, 1);
+    box-shadow: 0px 3.4369285106658936px 3.4369285106658936px 0px rgba(0, 0, 0, 0.25);;
+    cursor: pointer;
+}
+.btnColor{
+    width: 196px;
+    text-transform: uppercase;
+        padding: 14px 39px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        color: rgba(55, 55, 55, 1);
+        box-shadow: 0px 3.4369285106658936px 3.4369285106658936px 0px rgba(0, 0, 0, 0.25);
+        background-color: rgba(92, 211, 168, 1);
+        cursor: pointer;
+}
+.loadButton{
+    margin: 10px auto;
+    display: block;
+    /* margin-left: 200px; */
+    text-align: center;
+    width: 300px;
+        text-transform: uppercase;
+        padding: 14px 39px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        color: rgba(55, 55, 55, 1);
+        box-shadow: 0px 3.4369285106658936px 3.4369285106658936px 0px rgba(0, 0, 0, 0.25);
+        ;
+}
+.followers{
+    color: rgba(235, 216, 255, 1);
+    font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+}
